@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    {% load staticfiles %}
-    <link rel=stylesheet type="text/css" href="{% static 'css/index.css' %}">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-</head>
-<body>
-<header id="header" class="header">
-        <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-sm-4 col-md-4 ml-auto">
-                <nav>
-                    <ul class="menu d-flex justify-content-center">
-                        <li class="menu__about">
-                            <a href="#">about</a>
-                        </li>
-                        <li class="menu__contacts">
-                            <a href="#">contacts</a>
-                        </li>
-                        <li class="menu__photos">
-                            <a href="#">photos</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
+{% extends "shop/wrapper.html" %}
+{% block content %}
 <section>
     <div class="container-fluid mc">
         <div class="row">
@@ -115,5 +83,5 @@
         </div>
     </div>
 </section>
-</body>
-</html>
+
+{% endblock %}

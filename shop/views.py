@@ -6,6 +6,10 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'shop/index.html', locals())
 
+def about(request):
+    return render(request, 'shop/about.html', locals())
+
+
 # def detail(request, question_id):
 #     return HttpResponse("You're looking %s at question." % question_id)
 #
