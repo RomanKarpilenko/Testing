@@ -7,68 +7,113 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     {% load staticfiles %}
     <link rel=stylesheet type="text/css" href="{% static 'css/index.css' %}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 <body>
-    <div class="banner" style="background-image: url({% static 'img/banner.jpg'%})">
-        <div class="auto-container">
-            <div class="text">MC RAPER ROMA</div>
-            <div class="btns-box">
-                <a class="theme-btn btn" href="">HE IS A GOD</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
+<header id="header" class="header">
+        <div class="container">
         <div class="row">
-            <div class="col">
-                <h1 class="text-center">HOW IS HE?</h1>
+            <div class="col-lg-4 col-sm-4 col-md-4 ml-auto">
+                <nav>
+                    <ul class="menu d-flex justify-content-center">
+                        <li class="menu__about">
+                            <a href="#">about</a>
+                        </li>
+                        <li class="menu__contacts">
+                            <a href="#">contacts</a>
+                        </li>
+                        <li class="menu__photos">
+                            <a href="#">photos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container-fluid mc">
+        <div class="row">
+             <div class="col-lg-12">
+                 <div class="headline">mc raper roma</div>
+             </div>
+        </div>
+    </div>
+    <div class="container-fluid who">
+        <div class="row">
+            <div class="col-lg-12">
+                    <h1>WHO AM I?</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="text">
-                    Умеет печь вкусные блины и решать тройные интегралы <br>
-                    Все его считают умным и красивым, и он так считаю <br>
-                    Скромный <br>
-                    Обожает сырники <br>
-                    Знает, кто же этот "хороший мальчик" <br>
-                    Не умеет стоять на руках <br>
-                </div>
+            <div class="col-lg-12">
+                <p class="text">I can cook delicious pancakes and solve triple integrals.<br>
+                    Everyone thinks I'm smart and beautiful, and I think so.<br>
+                    Modest. I love cheese cakes. I know who this "good boy" is.<br>
+                    I do not know how to stand on my hands.</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row clearfix">
-            <div class="block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="inner-box">
-                    <div class="image">
-                        <img src="{% static 'img/1.jpg' %}">
-                    </div>
-                </div>
-            </div>
-            <div class="block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="inner-box">
-                    <div class="image">
-                        <img src="{% static 'img/2.jpg' %}">
-                    </div>
-                </div>
-            </div>
-            <div class="block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="inner-box">
-                    <div class="image">
-                        <img src="{% static 'img/3.jpg' %}">
-                    </div>
-                </div>
-            </div>
-            <div class="block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="inner-box">
-                    <div class="image">
-                        <img src="{% static 'img/4.jpg' %}">
-                    </div>
-                </div>
+    <div class="container-fluid how">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="how__title">MY TRACKS</h1>
+                <br>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4">
 
+                <div class="featured">
+                    <div class="featured__block">
+                        <h4 class="featured__title">STORYTELLING</h4>
+                            <i class="fa fa-book featured__icon"></i>
+                        <p class="featured__text">
+                            "We all die,<br>
+                            Yes, it happens,<br>
+                            But someone dies as a hero,<br>
+                            And someone dies creature..."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4">
+                <div class="featured">
+                    <div class="featured__block">
+                        <h4 class="featured__title">DISS VITEK</h4>
+                            <i class="fa fa-utensils featured__icon"></i>
+                        <p class="featured__text">
+                            "Iow, Vityok, you're just a fagot, not a rapper,<br>
+                            You're cool only in words, and nits on the Internet,<br>
+                            Remember, you fool, there's only one rapper on the planet,<br>
+                            It's EMC RAPER ROMA and I'll wash Vitka in the toilet!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4">
+                <div class="featured">
+                    <div class="featured__block">
+                        <h4 class="featured__title">NEW YEAR</h4>
+                            <i class="fa fa-star featured__icon"></i>
+                        <p class="featured__text">
+                            "One,
+                            We twist together all of our pelvis,<br>
+                            Two,
+                            Under the bit shakes his head,<br>
+                            Three,
+                            Are you standing Che? Do not brake!<br>
+                            Four,
+                            We stretch our legs wider!<br>
+                            Five,
+                            We repeat everything again!"<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
