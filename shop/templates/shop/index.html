@@ -31,55 +31,19 @@
             </div>
         </div>
         <div class="row">
+            {% for track in tracks %}
             <div class="col-lg-4 col-sm-4 col-md-4">
-
                 <div class="featured">
                     <div class="featured__block">
-                        <h4 class="featured__title">STORYTELLING</h4>
-                            <i class="fa fa-book featured__icon"></i>
+                        <h4 class="featured__title">{{ track.track_name }} </h4>
+                            <i class="fa {{ track.icon }} featured__icon"></i>
                         <p class="featured__text">
-                            "We all die,<br>
-                            Yes, it happens,<br>
-                            But someone dies as a hero,<br>
-                            And someone dies creature..."
+                            {{ track.track_text }}
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-4 col-md-4">
-                <div class="featured">
-                    <div class="featured__block">
-                        <h4 class="featured__title">DISS VITEK</h4>
-                            <i class="fa fa-utensils featured__icon"></i>
-                        <p class="featured__text">
-                            "Iow, Vityok, you're just a fagot, not a rapper,<br>
-                            You're cool only in words, and nits on the Internet,<br>
-                            Remember, you fool, there's only one rapper on the planet,<br>
-                            It's EMC RAPER ROMA and I'll wash Vitka in the toilet!"
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-4 col-md-4">
-                <div class="featured">
-                    <div class="featured__block">
-                        <h4 class="featured__title">NEW YEAR</h4>
-                            <i class="fa fa-star featured__icon"></i>
-                        <p class="featured__text">
-                            "One,
-                            We twist together all of our pelvis,<br>
-                            Two,
-                            Under the bit shakes his head,<br>
-                            Three,
-                            Are you standing Che? Do not brake!<br>
-                            Four,
-                            We stretch our legs wider!<br>
-                            Five,
-                            We repeat everything again!"<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

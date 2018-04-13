@@ -1,9 +1,10 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
-# from .models import Question
+from .models import Track
 # from .forms import SubscriberForm
 
 def index(request):
+    tracks = Track.objects.filter(is_active=True)
     return render(request, 'shop/index.html', locals())
 
 def about(request):
